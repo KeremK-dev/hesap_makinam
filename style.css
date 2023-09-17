@@ -1,0 +1,204 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+    background-color: black;
+    overflow: hidden;
+}
+#d1{
+    background-color: black;
+    height: 200px;
+    width: 250px;
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border: 5px solid white;
+    border-radius: 30px;
+    transition: border 1s;
+}
+#d2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 329px;
+    border: 2px solid black;
+    margin-top: 5px;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 30px;
+    transition: border 1s;
+}
+.button{
+    width:110px;
+    height: 40px;
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
+        position: relative;
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: 1px solid rgb(61, 106, 255);
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        background: transparent;
+        color: #fff;
+        overflow: hidden;
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+    
+    button:hover {
+        background: rgb(61, 106, 255);
+        box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+    
+    button:hover::before {
+        -webkit-animation: sh02 0.5s 0s linear;
+        -moz-animation: sh02 0.5s 0s linear;
+        animation: sh02 0.5s 0s linear;
+    }
+      
+    button::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+    }
+      
+    @keyframes sh02 {
+        from {
+            opacity: 0;
+            left: 0%;
+        }
+      
+        50% {
+            opacity: 1;
+        }
+        
+        to {
+            opacity: 0;
+            left: 100%;
+        }
+    }
+    
+    button:active {
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: box-shadow 0.2s ease-in;
+        -moz-transition: box-shadow 0.2s ease-in;
+        transition: box-shadow 0.2s ease-in;
+    }
+      
+    
+    
+    .input{
+        height: 100px;
+        width: 200px;
+        border-radius: 20px;
+        
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+        font-weight: 500;
+        font-size: .8vw;
+        color: #fff;
+        background-color: rgb(28,28,30);
+        box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+        border-radius: 0.4vw;
+        border: none;
+        outline: none;
+        padding: 0.4vw;
+        max-width: 190px;
+        transition: .4s;
+    }
+    
+    .input:hover {
+        box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+    }
+      
+      .input:focus {
+        box-shadow: 0 0 0 .15vw skyblue;
+      }
+
+
+#d3{
+    margin-top: 5px;
+    border:2px solid black;
+    height: 60px;
+    width: 329px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 30px;
+    transition: border 1s;
+}
+#tem{
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+}
+
+#d1:hover{
+    border: 5px solid rgb(29, 255, 29);
+}
+#d2:hover{
+    border: 5px solid rgb(29, 255, 29);
+}
+#d3:hover{
+    border: 5px solid rgb(29, 255, 29);
+}
+
+#l_div{
+    margin-left: 5px;
+    height: 465px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 10px 0px 0px 0px;
+    overflow: scroll;
+    background-color: white;
+}
+#dc_dv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#kyt{
+    width: 150px;
+}
+#l_sil{
+    width: 200px;
+}
+h3{
+    color: white;
+}
+#l{
+    color:white;
+    font-size: 30px;
+}
